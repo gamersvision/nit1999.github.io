@@ -1,120 +1,369 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--bootstrap css--->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!--main css--->
-<link rel="stylesheet" href="style.css">
-<!--google font--->
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-  </head>
-  <body style="background-color:#494043;">
-<div class="container">
-  <div class="nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Games</a></li>
-      <li><a href="#">Gallery</a></li>
-    </ul>
-  </div>
-<!---cover--->
-<div class="cover">
-  <img src="images/cover/featuric graphics.png" style="border-radius:8px;" alti="" width=100%>
-</div>
-<!---enw--->
-<br><br>
-<h2>Games</h2>
-<div class="recent">
+<html lang="en">
+<head>
+    <title>Gamersvision</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gamersvision studio">
+    <meta name="author" content="Gamersvision Studio">
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<meta name="theme-color" content="#ffffff">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
-<div class="recentItem1">
-  <div class="itemImage">
-    <img src="images/cover/logo2.png"   height="150px" alt="">
-    <h3  style="color:white;">CubeSnap</h3>
-    <center>
-    <p style="border-bottom:1px solid white;width:50%"></p>
-  </center>
-    <p  style="color:white;">CubeSnap is hypercasual game.</p>
-    <button type="button" name="button" class="btn1" style="float:left;margin-left:43px;">download</button>
-    <button type="button" name="button" class="btn2" style="float:right;margin-right:43px;">visit</button>
-  </div>
-</div>
+</head>
+
+<body>
+    <!-- ******HEADER****** -->
+    <header id="header" class="header">
+        <div class="container">
+            <h1 class="logo">
+                <a class="scrollto" href="#hero">
+                    <span class="logo-icon-wrapper"><img class="logo-icon" src="assets/images/logo.png" alt="icon"></span>
+                    <span class="h5 hightlight"><strong>Gamersvision</strong></span></a>
+            </h1><!--//logo-->
+            <nav class="main-nav navbar-expand-md float-right navbar-inverse" role="navigation">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#features">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#pricing">Games</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div id="hero" class="hero-section">
+
+        <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide" data-ride="carousel" data-interval="10000">
+
+            <div class="figure-holder-wrapper">
+        		<div class="container">
+            		<div class="row justify-content-end">
+            		</div><!--//row-->
+        		</div><!--//container-->
+    		</div><!--//figure-holder-wrapper-->
+
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#hero-carousel"></li>
+				<li data-slide-to="1" data-target="#hero-carousel"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="carousel-item item-1 active">
+					<div class="item-content container">
+    					<div class="item-content-inner">
+				            <h2 class="heading" style="color: #EEB411;">CUBESNAP</h2>
+				            <p class="intro" style="color: #EEB411;"> It is HyperCasual game, awesome UI, cool effects.</p>
+				            <a class="btn btn-primary btn-cta" href="https://play.google.com/store/apps/details?id=com.gamersvision.cubesnap" target="_blank" style="color: #ffff;background-color:#EEB411;">Download Now</a>
+    					</div><!--//item-content-inner-->
+					</div><!--//item-content-->
+				</div><!--//item-->
+
+				<div class="carousel-item item-2">
+					<div class="item-content container">
+						<div class="item-content-inner">
+
+				            <h2 class="heading" style="color: #EEB411;">DIVE</h2>
+				            <p class="intro" style="color: #EEB411;">It is a HyperCasual game , with cool design, awesome level and more exciting game.</p>
+				            <a class="btn btn-primary btn-cta" href="https://play.google.com/store/apps/details?id=com.gamersvision.dive" target="_blank" style="color: #fff;background-color:#EEB411;">Download Now</a>
+
+    					</div><!--//item-content-inner-->
+					</div>
+				</div><!--//item-->
+			</div><!--//carousel-inner-->
+
+		</div><!--//carousel-->
+    </div><!--//hero-->
+<!---testimonials section--->
+    <div id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title text-center">Many Happy Users</h2>
+            <div class="item mx-auto">
+                <div class="profile-holder">
+                    <img class="profile-image" src="assets/images/2.png" alt="profile">
+                </div>
+                <div class="quote-holder">
+                    <blockquote class="quote">
+                        <p>It is a very simple and sobar game.You can play it for your freshment i.e you can play it without using your ming:). It is created by one of my mates and i'm proud of him.good work brother keep it up</p>
+                        <div class="quote-source">
+                            <span class="name">@monu kumar,</span>
+                            <span class="meta">India</span>
+                        </div><!--//quote-source-->
+                    </blockquote>
+                </div><!--//quote-holder-->
+            </div><!--//item-->
+            <div class="item item-reversed mx-auto">
+                <div class="profile-holder">
+                    <img class="profile-image" src="assets/images/5.png" alt="profile">
+                </div>
+                <div class="quote-holder">
+                    <blockquote class="quote">
+                        <p>This game is awesome. </p>
+                        <div class="quote-source">
+                            <span class="name">@Sapna Vardiyani,</span>
+                            <span class="meta">India</span>
+                        </div><!--//quote-source-->
+                    </blockquote>
+                </div><!--//quote-holder-->
+            </div><!--//item-->
+            <div class="item mx-auto">
+                <div class="profile-holder">
+                    <img class="profile-image" src="assets/images/6.png" alt="profile">
+                </div>
+                <div class="quote-holder">
+                    <blockquote class="quote">
+                        <p>It is very good game.And addictive.you can play whole day. Nice game</p>
+                        <div class="quote-source">
+                            <span class="name">@Rajkumar Basor,</span>
+                            <span class="meta">India</span>
+                        </div><!--//quote-source-->
+                    </blockquote>
+                </div><!--//quote-holder-->
+            </div><!--//item-->
+            <div class="item item-reversed mx-auto">
+                <div class="profile-holder">
+                    <img class="profile-image" src="assets/images/5.png" alt="profile">
+                </div>
+                <div class="quote-holder">
+                    <blockquote class="quote">
+                        <p>Awesome graphics and functionality &#9734; Easy to use &#9734; Had great fun while playing &#9734; Try for sure &#9734; </p>
+                         <div class="quote-source">
+                            <span class="name">@Aditi Soni,</span>
+                            <span class="meta">India</span>
+                        </div><!--//quote-source-->
+                    </blockquote>
+                </div><!--//quote-holder-->
+            </div><!--//item-->
+            <center>  <a href="https://play.google.com/store/apps/dev?id=8494083851275003501" class="btn btn-lg btn-primary">More Reviews</a></center>
+
+        </div><!--//container-->
+    </div><!--//testimonials-->
+<!----Gallery sections---------->
+    <div id="features" class="features-section">
+        <div class="container text-center">
+            <h2 class="section-title">Gallery</h2>
+            <p class="intro">You can use this image URL in<cite> CUBESNAP</cite> game.We wil soon show more characters and UI design.</p>
+
+            <div class="tabbed-area row">
+              <div class="col-md-3 col-6 mb-3">
+                  <a href="assets/images/1.png"><img src="assets/images/1.png" alt="" width="100px"></a>
+              </div>
+              <div class="col-md-3 col-6 mb-3">
+                <a href="assets/images/2.png"><img src="assets/images/2.png" alt="" width="100px"></a>
+              </div>
+              <div class="col-md-3 col-6 mb-3">
+              <a href="assets/images/3.png"><img src="assets/images/3.png" alt="" width="100px"></a>
+              </div>
+              <div class="col-md-3 col-6 mb-3">
+              <a href="assets/images/4.png"> <img src="assets/images/4.png" alt="" width="100px"></a>
+              </div>
 
 
-<div class="recentItem1">
-  <div class="itemImage">
-    <img src="images/cover/logo2.png"   height="150px" alt="">
-    <h3  style="color:white;">CubeSnap</h3>
-    <center>
-    <p style="border-bottom:1px solid white;width:50%"></p>
-  </center>
-    <p  style="color:white;">CubeSnap is hypercasual game.</p>
-    <button type="button" name="button" class="btn1" style="float:left;margin-left:43px;">download</button>
-    <button type="button" name="button" class="btn2" style="float:right;margin-right:43px;">visit</button>
-  </div>
-</div>
 
-<div class="recentItem1">
-  <div class="itemImage">
-    <img src="images/cover/logo2.png"   height="150px" alt="">
-    <h3  style="color:white;">CubeSnap</h3>
-    <center>
-    <p style="border-bottom:1px solid white;width:50%"></p>
-  </center>
-    <p  style="color:white;">CubeSnap is hypercasual game.</p>
-    <button type="button" name="button" class="btn1" style="float:left;margin-left:43px;">download</button>
-    <button type="button" name="button" class="btn2" style="float:right;margin-right:43px;">visit</button>
-  </div>
-</div>
+            </div><!--//tabbed-area-->
 
-</div>
-</center>
-<br>
-<p style="border-bottom:1px solid white;margin-bottom:1px;"></p>
-<center>
-<header>
-<a href="privacy.html">Privacy & Policy &nbsp;</a>
-<a href="#">About Us&nbsp;</a>
-  <a href="#">Contact Us &nbsp;</a>
-<p style="border-bottom:1px solid white;margin-bottom:12px;"></p>
-</header>
-
-</center>
+        </div><!--//container-->
+    </div><!--//features-->
 
 
 
 
 
 
+<!----Team section----->
+    <div class="team-section" id="team">
+        <div class="container text-center">
+            <h2 class="section-title" style="color:white;">Our Team</h2>
+            <div class="story">
+                <p style="color:white;">We are a duo of Indie game developer.As we are new in Game Development, we are currently developing simple, user-friendly, hypercasual, fun games.But our vision is not limited to that we will further exapand in developing other genre games for android and windows both.</p>
+              </div>
+            <div class="members-wrapper row">
+                <div class="item col-md-4 col-12">
+                    <div class="item-inner">
+                        <div class="profile mb-2">
+                            <img style="border-radius:50%;" class="profile-image" src="assets/images/nitesh kumar.jpg" alt="Nitesh Kumar" />
+                        </div>
+
+                        <div class="member-content">
+                            <h3 class="member-name mb-0">Nitesh Kumar </h3>
+                             <span style="font-size:12px;"> ( NIT Raipur, B.Tech )</span>
+                              <ul class="social list-inline mt-2">
+                                <li class="list-inline-item"><a class="linkedin" href="https://www.linkedin.com/in/nitesh-kumar-45bb9815a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/Nitesh5292" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                              <li class="list-inline-item"><a class="github" href="https://github.com/nit1999" target="_blank"><i class="fab fa-github"></i></a></li>
+                                <li class="list-inline-item"><a class="email" href="mailto:nitofficial01@gmail.com?subject= Any Query" target="_blank"><i class="fa fa-envelope"></i></a></li>
+
+                            </ul>
+                            <div class="member-desc">
+                              <ul class="list-unstyled mb-3">
+                                <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; Full Stack Developer</i></li>
+                                  <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; UX / UI Designer</i></li>
+                                    <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; Programmer</i></li>
+                                </ul></div><!--//member-desc-->
+                        </div><!--//member-content-->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-12">
+                    <div class="item-inner">
+                        <div class="profile mb-2">
+                            <img style="border-radius:50%;" class="profile-image" src="assets/images/prashant kumar.jpg" alt="Prashant Kumar" />
+                        </div>
+
+                        <div class="member-content">
+                            <h3 class="member-name mb-0">Prashant Kumar</h3>
+                            <span style="font-size:12px;"> ( NIT Agartala, B.Tech )</span>
+                            <ul class="social list-inline mt-2">
+                              <li class="list-inline-item"><a class="linkedin" href="https://www.linkedin.com/in/prashant-kumar-817673164" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                              <li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/profile.php?id=100008295603153" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                              <li class="list-inline-item"><a class="github" href="https://github.com/prashant-DS" target="_blank"><i class="fab fa-github"></i></a></li>
+                              <li class="list-inline-item"><a class="email" href="mailto:pk8873444412@gmail.com?subject= Any Query" target="_blank"><i class="fa fa-envelope"></i></a></li>
 
 
+                            </ul>
+                            <div class="member-desc">
+                              <ul class="list-unstyled mb-3">
+                                <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; Game Developer/Programmer</i></li>
+                                  <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; Level Designer</i></li>
+                                    <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; UX Designer</i></li>
+                                </ul>
+
+                            </div><!--//member-desc-->
+                        </div><!--//member-content-->
+                    </div><!--//item-inner-->
+                </div><!--//item 2-->
+                <div class="item col-md-4 col-12">
+                    <div class="item-inner">
+                        <div class="profile mb-2">
+                            <img style="border-radius:50%;" class="profile-image" src="assets/images/ravi ranjan kumar.jpg" alt="Ravi Ranjan Kumar" />
+                        </div>
+
+                        <div class="member-content">
+                            <h3 class="member-name mb-0">Ravi Ranjan Kumar</h3>
+                            <span style="font-size:12px;"> ( NIT Agartala, B.Tech )</span>
+                            <ul class="social list-inline mt-2">
+                              <li class="list-inline-item"><a class="linkedin" href="https://www.linkedin.com/in/ravi-ranjan-kumar-878667157" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                              <li class="list-inline-item"><a class="facebook" href="https://m.facebook.com/profile.php?id=100009227980300&ref=content_filter" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                              <li class="list-inline-item"><a class="instagram" href="https://www.instagram.com/ravi_roy_algames/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                              <li class="list-inline-item"><a class="email" href="mailto:ravi1999roy@gmail.com?subject= Any Query " target="_blank"><i class="fa fa-envelope"></i></a></li>
 
 
-</div>
+                            </ul>
+                            <div class="member-desc">
+                              <ul class="list-unstyled mb-3">
+                                <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; UI / UX Designer</i></li>
+                                  <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; Game Developer</i></li>
+                                    <li class="mb-2"><i class="fa fa-arrow-circle-right" aria-hidden="true" >&nbsp; Level Designer</i></li>
+                                </ul>
+
+                            </div><!--//member-desc-->
+                        </div><!--//member-content-->
+                    </div><!--//item-inner-->
+                </div><!--//item 3-->
+            </div><!--//members-wrapper-->
+        </div>
+    </div><!--//team-section-->
+<!----game published section------->
+    <div id="pricing" class="pricing-section">
+        <div class="container text-center">
+            <h2 class="section-title">Games</h2>
+            <div class="intro">GamersVision published latest and unique game and user friendly.</div>
+            <div class="pricing-wrapper row">
+                <div class="item item-1 col-md-6 col-12">
+                    <div class="item-inner">
+                        <h3 class="item-heading">CUBESNAP<br></h3>
+                        <div class="price-figure" width="100px">
+                            <img style="width:100px;border-radius:50%;" src="assets/images/cubesnap.png" alt="">
+                        </div><!--//price-figure-->
+                        <ul class="list-unstyled mb-3">
+	                        <li class="mb-2"><i class="fas fa-check"></i> Single player</li>
+	                        <li class="mb-2"><i class="fas fa-check"></i> HyperCasual game</li>
+                            <li class="mb-2"><i class="fas fa-check"></i> All ages legals</li>
+                        </ul>
+                  <a class="btn btn-cta" href="https://play.google.com/store/apps/details?id=com.gamersvision.cubesnap">Get it now</a>
+
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item item-1 col-md-6 col-12">
+                    <div class="item-inner">
+                        <h3 class="item-heading">DIVE <br></h3>
+                        <div class="price-figure" width="100px">
+                            <img style="width:100px;" src="assets/images/dive.png" alt="">
+                        </div><!--//price-figure-->
+                        <ul class="list-unstyled mb-3">
+                          <li class="mb-2"><i class="fas fa-check"></i> Single player</li>
+                          <li class="mb-2"><i class="fas fa-check"></i> HyperCasual game</li>
+                            <li class="mb-2"><i class="fas fa-check"></i> All ages legals</li>
+                      </ul>
+                  <a class="btn btn-cta" href="https://play.google.com/store/apps/details?id=com.gamersvision.dive">Get it now</a>
+
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//pricing-wrapper-->
+
+        </div><!--//container-->
+    </div><!--//pricing-section-->
+<!----contact us----->
+    <div id="contact" class="contact-section">
+        <div class="container text-center">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+              <ul class="list-unstyled mb-3">
+              <li class="mb-2"><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/Gamers-Vision-109603914148570/?ref=page_internal" style="color: #EEB411;"> Facebook</a></li>
+                  <i class="fa fa-envelope" aria-hidden="true">&nbsp;	<a href="mailto:gamersvision01@gmail.com?subject= Feedback = Message" style="color: #EEB411;"> gamersvision01@gmail.com</a></i>
+              </ul>
+              <a href="privacy.html" style="color: #EEB411;">Privacy & Policy</a>
+            </div>
+
+        </div><!--//container-->
+    </div><!--//contact-section-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">copyright &copy; GamersVision , 2020</small>
 
 
+        </div><!--//container-->
+    </footer>
 
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="shop.js"></script>
-  </body>
+</body>
 </html>
